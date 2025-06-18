@@ -1,0 +1,66 @@
+services:
+  namenode:
+    image: bde2020/hadoop-namenode:2.0.0-hadoop3.2.1-java8
+    container_name: namenode
+    environment:
+      - CLUSTER_NAME=test
+    ports:
+      - "9870:9870"
+      - "9000:9000"
+    networks:
+      - airflow_default
+    volumes:
+      - ./hdfs/hdfs_namenode:/hadoop/dfs/name
+
+  datanode:
+    image: bde2020/hadoop-datanode:2.0.0-hadoop3.2.1-java8
+    container_name: datanode
+    environment:
+      - CLUSTER_NAME=test
+      - CORE_CONF_fs_defaultFS=hdfs://namenode:9000
+    depends_on:
+      - namenode
+    networks:
+      - airflow_default
+    ports:
+      - "9864:9864"
+    volumes:
+      - ./hdfs/hdfs_datanode:/hadoop/dfs/data
+
+  hive-metastore:
+    image: bde2020/hive:2.3.2-postgresql-metastore
+    container_name: hive-metastore
+    environment:
+      - HIVE_DB_TYPE=postgres
+      - HIVE_DB_HOST=airflow-postgres-1
+      - HIVE_DB_NAME=metastore
+      - HIVE_DB_USER=hive
+      - HIVE_DB_PASS=hive
+      - CORE_CONF_fs_defaultFS=hdfs://namenode:9000
+      - HADOOP_CONF_DIR=/etc/hadoop/conf
+    depends_on:
+      - namenode
+    ports:
+      - "9083:9083"
+    networks:
+      - airflow_default
+
+  hive-server:
+    image: bde2020/hive:2.3.2-postgresql-metastore
+    container_name: hive-server
+    environment:
+      - HIVE_METASTORE_URI=thrift://hive-metastore:9083
+      - HIVE_EXECUTION_ENGINE=mr
+      - HADOOP_CONF_DIR=/etc/hadoop/conf
+      - CORE_CONF_fs_defaultFS=hdfs://namenode:9000
+      - HIVE_SITE_conf_hive_metastore_uris=thrift://hive-metastore:9083
+    depends_on:
+      - hive-metastore
+    ports:
+      - "10000:10000"
+    networks:
+      - airflow_default
+
+networks:
+  airflow_default:
+    external: true
