@@ -7,3 +7,10 @@
 ### 데이터 파이프라인 아키텍쳐
 ![image](https://github.com/user-attachments/assets/ccf6804c-da18-4ed0-9c43-941c8090216a)
 
+
+
+### Datawrapper 대시보드
+
+- 월-항목 지출 집계
+![image](https://github.com/user-attachments/assets/222c6114-128c-4a0d-b12f-890c8fbe5836)
+![image](https://github.com/user-attachments/assets/a5f2ebec-caa8-4048-b565-8836171cde7b)
