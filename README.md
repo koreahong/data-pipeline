@@ -5,4 +5,5 @@
 자동으로 정리하고 시각화된 대시보드로 보여주는 파이프라인을 만드는 것이 목적입니다.
 
 ### 데이터 파이프라인 아키텍쳐
-![image](https://github.com/user-attachments/assets/09dbe90e-a46a-45c9-932d-4537e09a7cab)
+![image](https://github.com/user-attachments/assets/ccf6804c-da18-4ed0-9c43-941c8090216a)
+
