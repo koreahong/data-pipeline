@@ -10,6 +10,13 @@
 
 
 ### Datawrapper 대시보드
+
+Datawrapper는 코드 없이도 쉽고 빠르게 데이터 시각화를 만들 수 있는 웹 기반 도구입니다.
+다양한 그래프가 있고, 커뮤니티에서 사람들이 공유한 그래프를 가져올 수도 있습니다.
+그리고 노션에 임베딩이 되서 활용성이 개인적으로 사용하기 좋습니다. 
+또한, 무료이기 때문에 git action이나 스케쥴러로 API로 데이터와 그래프를 주기적으로 업데이트 할 수 있습니다.
+https://app.datawrapper.de/
+
 ![image](https://github.com/user-attachments/assets/222c6114-128c-4a0d-b12f-890c8fbe5836)
 ![image](https://github.com/user-attachments/assets/a5f2ebec-caa8-4048-b565-8836171cde7b)
 ![image](https://github.com/user-attachments/assets/fda74ab9-438c-468f-9f68-af50550493fb)
