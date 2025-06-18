@@ -10,7 +10,6 @@
 
 
 ### Datawrapper 대시보드
-
-- 월-항목 지출 집계
 ![image](https://github.com/user-attachments/assets/222c6114-128c-4a0d-b12f-890c8fbe5836)
 ![image](https://github.com/user-attachments/assets/a5f2ebec-caa8-4048-b565-8836171cde7b)
+![image](https://github.com/user-attachments/assets/fda74ab9-438c-468f-9f68-af50550493fb)
