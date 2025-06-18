@@ -21,6 +21,8 @@
 - **무료 요금제**로도 충분히 활용 가능합니다.
 - GitHub Actions나 스케줄러를 통해 **API 기반으로 주기적인 데이터 및 그래프 업데이트도 자동화**할 수 있습니다.
 
+아래 그래프들은 제가 실제로 Datawrapper을 활용하여 생성한 그래프입니다.
+[2023년 체중기록 그래프](https://www.datawrapper.de/_/7zJdR/?v=74)
 ![image](https://github.com/user-attachments/assets/222c6114-128c-4a0d-b12f-890c8fbe5836)
 ![image](https://github.com/user-attachments/assets/a5f2ebec-caa8-4048-b565-8836171cde7b)
 ![image](https://github.com/user-attachments/assets/fda74ab9-438c-468f-9f68-af50550493fb)
